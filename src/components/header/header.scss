@@ -1,0 +1,90 @@
+.header {
+  background-color: #00549F;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 150px auto;
+  column-gap: 0.625rem;
+  padding: 1rem;
+
+  .headshot {
+    display: grid;
+    place-items: center;
+
+    img {
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      object-position: top;
+      // border: 2px solid #fff;
+      border-radius: 200px;
+      overflow: hidden;
+    }
+  }
+
+  .summary {
+    display: grid;
+    align-content: center;
+    row-gap: 0.75rem;
+    grid-template-columns: 4.5fr 2.25fr;
+    grid-template-areas:
+      "name name"
+      "email phone"
+      "linkedin location"
+      "dob nationality";
+
+    img {
+      width: 14px;
+      margin-right: 0.75em;
+    }
+
+    div {
+      display: flex;
+
+      b {
+        display: inline-block;
+        margin-right: 10px;
+        // Header section header color to be changed here and in the respective svg files
+        color: #8EB7DD;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        :focus {
+          color: #fff;
+        }
+      }
+    }
+
+    .name {
+      grid-area: name;
+      font-size: x-large;
+    }
+
+    .phone {
+      grid-area: phone;
+    }
+
+    .location {
+      grid-area: location;
+    }
+
+    .email {
+      grid-area: email;
+    }
+
+    .linkedin {
+      grid-area: linkedin;
+      align-items: flex-start;
+    }
+
+    .dob {
+      grid-area: dob;
+    }
+
+    .nationality {
+      grid-area: nationality;
+    }
+  }
+}

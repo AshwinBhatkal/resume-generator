@@ -1,0 +1,96 @@
+.content {
+  display: grid;
+  grid-template-columns: 150px auto;
+  row-gap: 7px;
+  grid-auto-rows: min-content;
+  padding: 20px 25px;
+  text-align: justify;
+
+  .heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: pre-line;
+    color: #00549F;
+  }
+
+  .thematic-break {
+    border-right: 2px solid #00549F;
+    border-top: 2px solid #00549F;
+    height: 5px;
+    position: relative;
+    top: 5px;
+  }
+
+  ul {
+    margin: 0;
+    padding-inline-start: 1.5rem;
+  }
+
+  div,
+  li {
+    margin-bottom: 8px;
+  }
+
+  li::marker {
+    color: #0b2027;
+  }
+
+  .education,
+  .experience {
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .degree-grade {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+  }
+
+  .education,
+  .projects,
+  .technical {
+    margin-bottom: 0;
+  }
+
+  .extras,
+  .professional {
+    ul {
+      padding-inline-start: 1rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .extras {
+    margin-top: -1rem;
+  }
+
+  .language {
+    table {
+      width: 100%;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #00549F;
+      border-collapse: collapse;
+      text-transform: uppercase;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 2px 5px;
+    }
+  }
+
+  .technical {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
